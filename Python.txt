@@ -1,0 +1,8 @@
+python -m django startproject demoproject
+python manage.py runserver
+python manage.py startapp B5
+settings m installed app "B5"
+urls.app path("",include("B5.urls"))
+python manage.py makemigrations
+python manage.py migrate
+python manage.py createsuperuser
