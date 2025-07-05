@@ -1,58 +1,15 @@
-{% include "main.html" %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About Us</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- myapp/templates/myapp/home.html -->
+<h2>Welcome, {{ user.username }}</h2>
+<p>You are logged in.</p>
+<a href="{% url 'logout' %}">Logout</a>
 
-
-  <section class="about-section">
-    <div class="about-text">
-      <h2>About Our Company</h2>
-      <p>
-        Founded in 2010, Our Company has been dedicated to delivering
-        innovative solutions and excellent customer service. We believe
-        in building lasting relationships with our clients by understanding
-        their unique needs and providing tailored strategies for success.
-      </p>
-      <p>
-        Our passionate team works tirelessly to ensure every project
-        meets the highest standards of quality and professionalism.
-      </p>
-    </div>
-    <div class="about-image">
-      <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80" alt="Team collaborating" />
-    </div>
-  </section>
-
-  <section class="team-section">
-    <h2>Meet Our Team</h2>
-    <div class="team-cards">
-      <div class="team-card">
-        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Jane Doe" />
-        <h3>Jane Doe</h3>
-        <p>CEO & Founder</p>
-      </div>
-      <div class="team-card">
-        <img src="https://randomuser.me/api/portraits/men/46.jpg" alt="John Smith" />
-        <h3>John Smith</h3>
-        <p>Lead Developer</p>
-      </div>
-      <div class="team-card">
-        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Emily Johnson" />
-        <h3>Emily Johnson</h3>
-        <p>Marketing Head</p>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    &copy; 2025 Your Company Name. All rights reserved.
-  </footer>
-   {% block content %}
-
-  {% endblock %}
 </body>
-
 </html>
